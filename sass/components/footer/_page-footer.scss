@@ -1,0 +1,18 @@
+.page-footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 603px;
+  background-color: $footer-bg-color;
+}
+.page-footer > .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    height: 253px;
+    align-items: baseline;
+    padding-top: 45px;
+  }
+}

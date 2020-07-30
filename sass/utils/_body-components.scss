@@ -1,0 +1,25 @@
+body {
+  background-color: $bg-color;
+  color: $primary-text-color;
+  font-family: $font-family;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+ img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+form {
+  width: 528px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+textarea {
+  resize: none;
+}

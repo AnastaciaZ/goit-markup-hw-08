@@ -1,0 +1,37 @@
+.client {
+  display: flex;
+  justify-content: center;
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: calc((100% - 30px * 1) / 2);
+    min-width: 210px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+  }
+  &-icon:hover {
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    fill: $accent-color;
+    transition: $transition-timing-function;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calc((100% - 30px * 5) / 6);
+      min-width: 170px;
+      height: 90px;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      fill: #afb1b8;
+    }
+  }
+}

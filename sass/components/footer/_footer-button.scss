@@ -1,0 +1,13 @@
+.button-footer {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+
+  padding: 10px 29px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 8px;
+  }
+}
+.button-footer-icon {
+  margin-left: 10px;
+}
