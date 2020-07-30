@@ -87,7 +87,7 @@ textarea {
   color: #212121;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 480px) {
   .header-navigation {
     display: none;
   }
@@ -746,6 +746,8 @@ textarea {
           flex-direction: column;
   text-align: center;
   padding: 0;
+  margin: 0;
+  width: 450px;
 }
 
 .footer-form {
@@ -757,6 +759,7 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  width: 450px;
 }
 
 @media screen and (min-width: 1200px) {
