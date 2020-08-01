@@ -1,46 +1,40 @@
 .site-contacts {
-  @media screen and (min-width: 481px) {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  align-items: center;
+
+  .link {
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
+    margin-bottom: 14px;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
 
-    .link {
-      color: $primary-text-color;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      text-decoration: none;
+    &:last-child {
+      margin-top: 0px;
+    }
 
-      &:hover,
-      &:focus {
-        color: $accent-color;
-        outline: none;
-        transition: $transition-timing-function;
-      }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      outline: none;
+      transition: $transition-timing-function;
     }
   }
+  @media screen and (min-width: 481px) {
+    margin-left: 84px;
+  }
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: auto;
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+    text-align: center;
+    margin-left: 305px;
 
     .item + .item {
       margin-left: 30px;
-    }
-
-    .link {
-      color: $primary-text-color;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: $accent-color;
-        outline: none;
-        transition: $transition-timing-function;
-      }
     }
   }
 }

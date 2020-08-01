@@ -2,12 +2,21 @@
   display: flex;
   justify-content: center;
 
+  & .list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+  }
+
   &-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    width: calc((100% - 30px * 1) / 2);
+    width: calc((100% - 30px) / 2);
     min-width: 210px;
     height: 90px;
     border: 1px solid #afb1b8;
@@ -21,7 +30,7 @@
     transition: $transition-timing-function;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     &-icon {
       display: flex;
       justify-content: center;

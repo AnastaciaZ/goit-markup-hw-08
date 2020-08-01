@@ -7,6 +7,14 @@
   background-color: transparent;
   outline: none;
 
+  &.is-open:hover,
+  &.is-open:focus {
+    fill: $accent-color;
+    outline: none;
+    border: none;
+    transition: $transition-timing-function;
+  }
+
   & .mobile-close {
     display: none;
   }
@@ -21,16 +29,17 @@
   }
 }
 .menu-container {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
     display: none;
   }
   @media screen and (max-width: 480px) {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 454px;
-    padding: 60px 140px;
+    /*padding: 60px 140px;*/
 
     background-color: $bg-color;
     font-style: normal;
@@ -50,9 +59,4 @@
     justify-content: space-between;
     flex-grow: 1;
   }*/
-}
-.menu-nav .site {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }
