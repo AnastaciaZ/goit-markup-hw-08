@@ -1,20 +1,35 @@
 .header-navigation {
   @media screen and (max-width: 480px) {
     display: none;
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
   }
   @media screen and (min-width: 481px) {
     display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
     align-items: center;
   }
 }
 .navigator {
   @media screen and (min-width: 481px) {
     display: flex;
+    flex: 0 0 141px;
     align-items: center;
   }
 }
 .site-nav {
   display: flex;
+  .item {
+    text-align: center;
+  }
   .link {
     position: relative;
     display: inline-block;

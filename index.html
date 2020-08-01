@@ -16,6 +16,7 @@
     <!--<link rel="stylesheet" href="./css/styles.css">-->
   </head>
   <body>
+    
     <header class="header-container">
       <nav class="container">
         <div class="navigator">
@@ -23,66 +24,9 @@
             <span class="logo-web">Web</span>
             <span class="logo-studio">Studio</span>
           </a>
-          <button
-            type="button"
-            class="menu-button is-open"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              width="18px"
-              height="18px"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="mobile-close"
-                href="./image/menu-sprites_l.svg#icon-mobile-close"
-              ></use>
-              <use
-                class="mobile-menu"
-                href="./image/menu-sprites_l.svg#icon-mobile-menu"
-              ></use>
-            </svg>
-          </button>
-          <div class="menu-container" id="menu-container" data-menu>
-            <div class="menu-nav">
-              <ul class="site-nav">
-                <li class="item">
-                  <a href="" class="link current">Студия</a>
-                </li>
-                <li class="item">
-                  <a href="./portfolio.html" class="link">Порфолио</a>
-                </li>
-                <li class="item">
-                  <a href="" class="link">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="menu-contacts">
-              <ul class="site-contacts">
-                <li class="item">
-                  <a href="mailto:info@devstudio.com" class="link">
-                    <svg class="site-contacts-icon" width="16px" height="12px">
-                      <use href="./image/sprites_l.svg#icon-mail_l"></use>
-                    </svg>
-                    info@devstudio.com</a
-                  >
-                </li>
-                <li class="item">
-                  <!--<img src="image/tel.svg" alt="" />-->
-                  <a href="tel:+380961111111" class="link">
-                    <svg class="site-contacts-icon" width="16px" height="12px">
-                      <use href="./image/sprites_l.svg#icon-tel_l"></use>
-                    </svg>
-                    +38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="header-navigation">
+        </div> 
+         
+        <div class="header-navigation" id="header-navigation" data-menu>
           <ul class="site-nav">
             <li class="item">
               <a href="" class="link current">Студия</a>
@@ -96,7 +40,7 @@
           </ul>
           <ul class="site-contacts">
             <li class="item">
-              <!--<img src="image/mail.svg" alt="" />-->
+              
               <a href="mailto:info@devstudio.com" class="link">
                 <svg class="site-contacts-icon" width="16px" height="12px">
                   <use href="./image/sprites_l.svg#icon-mail_l"></use>
@@ -105,7 +49,7 @@
               >
             </li>
             <li class="item">
-              <!--<img src="image/tel.svg" alt="" />-->
+              
               <a href="tel:+380961111111" class="link">
                 <svg class="site-contacts-icon" width="16px" height="12px">
                   <use href="./image/sprites_l.svg#icon-tel_l"></use>
@@ -115,10 +59,18 @@
             </li>
           </ul>
         </div>
+        </div>
+        
       </nav>
+      <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="header-navigation" data-menu-button>
+        <svg width="18px" height="18px" aria-label="Переключатель мобильного меню">
+          <use class="mobile-close" href="./image/menu-sprites_l.svg#icon-mobile-close"></use>
+          <use class="mobile-menu" href="./image/menu-sprites_l.svg#icon-mobile-menu"></use>
+        </svg>
+      </button>
     </header>
     <main>
-      <section class="hero">
+    <section class="hero">
         <h1 class="hero-title">
           Эффективные решения <br />
           для вашего бизнеса
@@ -549,14 +501,14 @@
                     <use href="./image/sprites_l.svg#icon-inst_l"></use>
                   </svg>
                 </a>
-                <!--<img src="image/inst.svg" alt="" /></a>-->
+                
               </li>
               <li class="item">
                 <a href="" class="footer-link-n" aria-label="Твиттер">
                   <svg class="footer-link-icon" width="20px" height="20px">
                     <use href="./image/sprites_l.svg#icon-twit_l"></use>
                   </svg>
-                  <!--<img src="image/twit.svg" alt="" />-->
+                  
                 </a>
               </li>
               <li class="item">
@@ -564,7 +516,7 @@
                   <svg class="footer-link-icon" width="20px" height="20px">
                     <use href="./image/sprites_l.svg#icon-face_l"></use>
                   </svg>
-                  <!--<img src="image/face.svg" alt="" /></a>-->
+                 
                 </a>
               </li>
               <li class="item">
@@ -572,14 +524,14 @@
                   <svg class="footer-link-icon" width="20px" height="20px">
                     <use href="./image/sprites_l.svg#icon-link_l"></use>
                   </svg>
-                  <!--<img src="image/link.svg" alt="" /></a>-->
+                
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div>
-          <!--<span class="footer-title">Подпишитесь на рассылку</span>-->
+          
           <form class="footer-action" action="/">
             <div class="footer-form">
               <div class="footer-mailing">
@@ -593,20 +545,20 @@
                   id="mailing"
                   value="E-mail"
                 />
-                <!--<label for="mailing" class="footer-label">E-mail</label>-->
+                
               </div>
               <button class="button-footer">
                 Подписаться
                 <svg class="button-footer-icon" width="24px" height="24px">
                   <use href="./image/sprites_l.svg#icon-telegram_l"></use>
                 </svg>
-                <!--<img src="image/telegram.svg" alt="" />-->
+                
               </button>
             </div>
           </form>
         </div>
       </div>
-    </footer>
+    </footer>-->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

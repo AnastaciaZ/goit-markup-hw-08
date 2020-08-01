@@ -1,13 +1,43 @@
 .logo {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  display: flex;
   font-family: $font-family-logo;
   text-decoration: none;
+  font-weight: 700;
+
+  @media screen and (min-width: 481px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 769px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 .logo-web {
   color: $accent-color;
+  margin-right: 10px;
 }
 .logo-studio {
   color: $title-text-color;
+}
+
+.test {
+  /*display: flex;*/
+  width: 480px;
+  padding: 0 15px;
+  background: #f2f2f2;
+  margin: 0 auto;
+
+  @media screen and (min-width: 481px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 769px) {
+    width: 1200px;
+  }
+}
+.header-container {
+  @media screen and (max-width: 480px) {
+    padding: 20px 0;
+    position: relative;
+  }
 }
