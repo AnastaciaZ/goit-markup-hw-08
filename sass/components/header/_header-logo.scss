@@ -21,23 +21,13 @@
   color: $title-text-color;
 }
 
-.test {
-  /*display: flex;*/
-  width: 480px;
-  padding: 0 15px;
-  background: #f2f2f2;
-  margin: 0 auto;
-
-  @media screen and (min-width: 481px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 769px) {
-    width: 1200px;
-  }
-}
 .header-container {
+  
   @media screen and (max-width: 480px) {
     padding: 20px 0;
     position: relative;
+  }
+  .container {
+    display: flex;
   }
 }

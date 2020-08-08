@@ -16,16 +16,14 @@
     <!--<link rel="stylesheet" href="./css/styles.css">-->
   </head>
   <body>
-    
-    <header class="header-container">
+    <!--<header class="header-container">
       <nav class="container">
         <div class="navigator">
           <a href="/" class="logo">
             <span class="logo-web">Web</span>
             <span class="logo-studio">Studio</span>
           </a>
-        </div> 
-         
+        </div>
         <div class="header-navigation" id="header-navigation" data-menu>
           <ul class="site-nav">
             <li class="item">
@@ -40,7 +38,6 @@
           </ul>
           <ul class="site-contacts">
             <li class="item">
-              
               <a href="mailto:info@devstudio.com" class="link">
                 <svg class="site-contacts-icon" width="16px" height="12px">
                   <use href="./image/sprites_l.svg#icon-mail_l"></use>
@@ -49,7 +46,6 @@
               >
             </li>
             <li class="item">
-              
               <a href="tel:+380961111111" class="link">
                 <svg class="site-contacts-icon" width="16px" height="12px">
                   <use href="./image/sprites_l.svg#icon-tel_l"></use>
@@ -59,18 +55,32 @@
             </li>
           </ul>
         </div>
-        </div>
-        
       </nav>
-      <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="header-navigation" data-menu-button>
-        <svg width="18px" height="18px" aria-label="Переключатель мобильного меню">
-          <use class="mobile-close" href="./image/menu-sprites_l.svg#icon-mobile-close"></use>
-          <use class="mobile-menu" href="./image/menu-sprites_l.svg#icon-mobile-menu"></use>
+      <button
+        type="button"
+        class="menu-button is-open"
+        aria-expanded="false"
+        aria-controls="header-navigation"
+        data-menu-button
+      >
+        <svg
+          width="18px"
+          height="18px"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use
+            class="mobile-close"
+            href="./image/menu-sprites_l.svg#icon-mobile-close"
+          ></use>
+          <use
+            class="mobile-menu"
+            href="./image/menu-sprites_l.svg#icon-mobile-menu"
+          ></use>
         </svg>
       </button>
     </header>
     <main>
-    <section class="hero">
+      <section class="hero">
         <h1 class="hero-title">
           Эффективные решения <br />
           для вашего бизнеса
@@ -126,7 +136,6 @@
                 />
                 <label for="mail" class="form-label">Почта</label>
               </div>
-
               <div class="form-coment">
                 <textarea
                   class="comment"
@@ -134,12 +143,12 @@
                   id="comment"
                   rows="10"
                   placeholder=" "
-                ></textarea>
+                >
+                </textarea>
                 <label for="comment" class="form-label-comment"
                   >Комментарий</label
                 >
               </div>
-
               <div class="form-field-checkbox">
                 <label class="checkbox-label">
                   Соглашаюсь с рассылкой и принимаю
@@ -157,9 +166,7 @@
                   </svg>
                 </label>
               </div>
-
               <button type="submit" class="form-button">Отправить</button>
-
               <button data-modal-close class="form-close">
                 <svg class="form-icon-close" width="30px" height="30px">
                   <use href="./image/form-sprites_l.svg#icon-close-black"></use>
@@ -168,11 +175,11 @@
             </form>
           </div>
         </div>
-      </section>
+      </section>-->
       <section class="advantages-section">
-        <div class="container">
+        <div class="advantages-container">
           <ul class="advantages-list">
-            <li class="item stacion">
+            <li class="advantages-item">
               <div class="advantage-icon">
                 <svg width="70px" height="70px">
                   <use href="./image/sprites_l.svg#icon-station_l"></use>
@@ -184,7 +191,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="item clock">
+            <li class="advantages-item">
               <div class="advantage-icon">
                 <svg width="70px" height="70px">
                   <use href="./image/sprites_l.svg#icon-clock_l"></use>
@@ -196,7 +203,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item computer">
+            <li class="advantages-item">
               <div class="advantage-icon">
                 <svg width="70px" height="70px">
                   <use href="./image/sprites_l.svg#icon-computer_l"></use>
@@ -208,13 +215,12 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="item rocketman">
+            <li class="advantages-item">
               <div class="advantage-icon">
                 <svg width="70px" height="70px">
                   <use href="./image/sprites_l.svg#icon-rocketman_l"></use>
                 </svg>
               </div>
-
               <h3 class="advantages-list-title">Современные технологии</h3>
               <p class="advantages-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -224,14 +230,21 @@
           </ul>
         </div>
       </section>
-      <div class="features">
+     <!--<div class="features">
         <section class="section">
-          <div class="container">
+          <div class="features-container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="list">
               <li class="item">
                 <div class="profily-card">
-                  <img src="image/1_l.jpg" alt="" />
+                  <img
+                    srcset="image/desktop/feat1-d1x-l.jpg 1x,
+                            image/desktop/feat1-d2x-l.jpg 2x
+
+                    "
+                    src="image/1_l.jpg"
+                    alt=""
+                    width="370"/>
                   <div class="profili-text">
                     <h3 class="list-profilу">Десктопные приложения</h3>
                   </div>
@@ -239,7 +252,7 @@
               </li>
               <li class="item">
                 <div class="profily-card">
-                  <img src="image/2_l.jpg" alt="" width="" />
+                  <img src="image/2_l.jpg" alt="" />
                   <div class="profili-text">
                     <h3 class="list-profilу">Мобильные приложения</h3>
                   </div>
@@ -247,7 +260,14 @@
               </li>
               <li class="item">
                 <div class="profily-card">
-                  <img src="image/3_l.jpg" alt="" />
+                  <img
+                  srcset="image/desktop/feat3-d1x-l.jpg 1x,
+                          image/desktop/feat3-d2x-l.jpg 2x
+
+          "
+                   src="image/3_l.jpg"
+                   alt=""
+                   width="370"/>
                   <div class="profili-text">
                     <h3 class="list-profilу">Дизайнерские решения</h3>
                   </div>
@@ -258,11 +278,17 @@
         </section>
       </div>
       <section class="section-comand">
-        <div class="container">
+        <div class="comand-container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list">
             <li class="item">
-              <img src="image/team1_l.jpg" alt="" />
+              <img 
+                srcset="image/desktop/com1-d1x-l.jpg 1x,
+                        image/desktop/com1-d2x-l.jpg 2x
+                "
+              src="image/team1_l.jpg"
+              alt=""
+              width="370" />
               <h3 class="list-comand">Николай Кучеренко</h3>
               <span class="comand-prof">Designer</span>
               <div class="icon">
@@ -299,7 +325,13 @@
               </div>
             </li>
             <li class="item">
-              <img src="image/team2_l.jpg" alt="" />
+              <img
+                srcset="image/desktop/com2-d1x-l.jpg 1x,
+                        image/desktop/com2-d2x-l.jpg 2x
+        "
+               src="image/team2_l.jpg"
+               alt="" 
+               width="370"/>
               <h3 class="list-comand">Ольга Иванова</h3>
               <span class="comand-prof">Frontend Developer</span>
               <div class="icon">
@@ -336,7 +368,13 @@
               </div>
             </li>
             <li class="item">
-              <img src="image/team3_l.jpg" alt="" />
+              <img 
+                srcset="image/desktop/com3-d1x-l.jpg 1x,
+                        image/desktop/com3-d2x-l.jpg 2x
+        "
+              src="image/team3_l.jpg"
+              alt=""
+              width="370" />
               <h3 class="list-comand">Андрей Шевченко</h3>
               <span class="comand-prof">Marketing</span>
               <div class="icon">
@@ -373,7 +411,13 @@
               </div>
             </li>
             <li class="item">
-              <img src="image/team4_l.jpg" alt="" />
+              <img
+                srcset="image/desktop/com4-d1x-l.jpg 1x,
+                        image/desktop/com4-d2x-l.jpg 2x
+        "
+               src="image/team4_l.jpg"
+               alt=""
+               width="370" />
               <h3 class="list-comand">Иван Николаев</h3>
               <span class="comand-prof">UI Designer</span>
               <div class="icon">
@@ -501,14 +545,12 @@
                     <use href="./image/sprites_l.svg#icon-inst_l"></use>
                   </svg>
                 </a>
-                
               </li>
               <li class="item">
                 <a href="" class="footer-link-n" aria-label="Твиттер">
                   <svg class="footer-link-icon" width="20px" height="20px">
                     <use href="./image/sprites_l.svg#icon-twit_l"></use>
                   </svg>
-                  
                 </a>
               </li>
               <li class="item">
@@ -516,7 +558,6 @@
                   <svg class="footer-link-icon" width="20px" height="20px">
                     <use href="./image/sprites_l.svg#icon-face_l"></use>
                   </svg>
-                 
                 </a>
               </li>
               <li class="item">
@@ -524,14 +565,12 @@
                   <svg class="footer-link-icon" width="20px" height="20px">
                     <use href="./image/sprites_l.svg#icon-link_l"></use>
                   </svg>
-                
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div>
-          
           <form class="footer-action" action="/">
             <div class="footer-form">
               <div class="footer-mailing">
@@ -545,20 +584,18 @@
                   id="mailing"
                   value="E-mail"
                 />
-                
               </div>
               <button class="button-footer">
                 Подписаться
                 <svg class="button-footer-icon" width="24px" height="24px">
                   <use href="./image/sprites_l.svg#icon-telegram_l"></use>
                 </svg>
-                
               </button>
             </div>
           </form>
         </div>
       </div>
-    </footer>-->
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

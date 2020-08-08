@@ -1,17 +1,20 @@
-.container {
-  /*width: 480px;*/
-  display: flex;
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+%content-container {
+
+  padding: 60px 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
 
   @media screen and (min-width: 481px) {
     width: 768px;
   }
   @media screen and (min-width: 769px) {
+    padding: 94px 15px;
     width: 1200px;
   }
 }
+/*.container {
+  
+  position: relative;
+  width: 480px;
+ 
+}*/

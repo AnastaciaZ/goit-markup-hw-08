@@ -1,9 +1,8 @@
 .site-contacts {
   display: flex;
   flex-direction: column;
-
-  .item {
-    text-align: center;
+  @media screen and (max-width: 480px) {
+    align-items: center;
   }
 
   @media screen and (max-width: 768px) {

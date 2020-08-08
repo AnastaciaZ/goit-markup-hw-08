@@ -1,12 +1,19 @@
 .portfolio-button {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   margin-bottom: 50px;
 
-    & .item:not(:first-child) {
-    margin-left: 8px;
+  @media screen and (max-width: 480px){
+    flex-wrap: wrap;
+      & .item {
+        margin-right: 8px;
+      }
   }
+  @media screen and (min-width: 481px){
+  justify-content: center;
+    & .item:not(:first-child) {
+      margin-left: 8px;
+    }
+  }   
 }
 .button-portfolio  {
   padding: 6px 22px;
@@ -35,5 +42,11 @@
       0px 3px 1px rgba(0, 0, 0, 0.1);
       transition: $transition-timing-function;
     } 
+    @media screen and (max-width: 480px)  {
+      margin-bottom: 21px;
+      &:nth-child(4) {
+        margin-left: 0;
+      }
+    }
 }
   

@@ -1,6 +1,11 @@
 .header-navigation {
+  background-color: $bg-color;
+
   @media screen and (max-width: 480px) {
     display: none;
+    position: absolute;
+    top: 100%;
+    height: 454px;
     &.is-open {
       display: flex;
       flex-direction: column;

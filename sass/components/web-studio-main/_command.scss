@@ -1,3 +1,6 @@
+.comand-container {
+  @extend %content-container;
+}
 .section-comand {
   display: flex;
   padding-top: 60px;
