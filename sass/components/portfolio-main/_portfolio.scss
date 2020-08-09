@@ -1,4 +1,7 @@
 .portfolio-container {
+ margin-left: auto;
+ margin-right: auto;
+
   @media screen and (min-width: 481px) {
   display: flex;
   flex-wrap: wrap;
@@ -12,6 +15,8 @@
    transition: $transition-timing-function;
  }
   @media screen and (max-width: 480px) {
+    display: flex;
+    text-align: center;
    &:not(:last-child) {
     margin-bottom: 30px;
    }

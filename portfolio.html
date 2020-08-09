@@ -21,10 +21,10 @@
       <div class="header-navigation" id="header-navigation" data-menu>
         <ul class="site-nav">
           <li class="item">
-            <a href="" class="link current">Студия</a>
+            <a href="" class="link">Студия</a>
           </li>
           <li class="item">
-            <a href="./portfolio.html" class="link">Порфолио</a>
+            <a href="./portfolio.html" class="link current">Порфолио</a>
           </li>
           <li class="item">
             <a href="" class="link">Контакты</a>
@@ -64,11 +64,12 @@
       >
         <use
           class="mobile-close"
-          href="./image/menu-sprites_l.svg#icon-mobile-close"
+          href="./image/menu-sprites_l.svg#icon-mobile-menu"
+          
         ></use>
         <use
           class="mobile-menu"
-          href="./image/menu-sprites_l.svg#icon-mobile-menu"
+          href="./image/menu-sprites_l.svg#icon-mobile-close"
         ></use>
       </svg>
     </button>
@@ -259,83 +260,92 @@
   </main>
   <footer class="page-footer">
     <div class="container">
-      <div class="logo-contacts">
-       <a href="/" class="logo-foot">
-       <span class="logo-web-foot">Web</span>
-       <span class="logo-studio-foot">Studio</span>
-       </a>
-         <address>
-          <ul>
-            <li class="address">
-              <span class="footer-address">г. Киев, пр-т Леси Украинки, 26</span>
+      <div class="footer-desctop">
+        <div class="logo-contacts">
+          <a href="/" class="logo-foot">
+            <span class="logo-web-foot">Web</span>
+            <span class="logo-studio-foot">Studio</span>
+          </a>
+          <address>
+            <ul>
+              <li class="address">
+                <span class="footer-address"
+                  >г. Киев, пр-т Леси Украинки, 26</span
+                >
+              </li>
+              <li class="address">
+                <a href="mailto:info@devstudio.com" class="footer-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address">
+                <a href="tel:+380961111111" class="footer-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="icon-footer">
+          <b class="footer-title">присоединяйтесь</b>
+          <ul class="icon-footer-list">
+            <li class="item">
+              <a href="" class="footer-link-n" aria-label="Инстаграмм">
+                <svg class="footer-link-icon" width="20px" height="20px">
+                  <use href="./image/sprites_l.svg#icon-inst_l"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address">
-              <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+            <li class="item">
+              <a href="" class="footer-link-n" aria-label="Твиттер">
+                <svg class="footer-link-icon" width="20px" height="20px">
+                  <use href="./image/sprites_l.svg#icon-twit_l"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address">
-              <a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a>
+            <li class="item">
+              <a href="" class="footer-link-n" aria-label="Фейсбук">
+                <svg class="footer-link-icon" width="20px" height="20px">
+                  <use href="./image/sprites_l.svg#icon-face_l"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="footer-link-n" aria-label="Линкедин">
+                <svg class="footer-link-icon" width="20px" height="20px">
+                  <use href="./image/sprites_l.svg#icon-link_l"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-         </address>
-       </div>
-       <div class="icon-footer">
-         <b class="footer-title">присоединяйтесь</b>
-         <ul class="icon-footer-list">
-           <li class="item">       
-             <a href="" class="footer-link-n" aria-label="Инстаграмм">
-               <svg class="footer-link-icon" width="20px" height="20px">
-                 <use href="./image/sprites_l.svg#icon-inst_l"></use>
-              </svg>
-            </a>
-               <!--<img src="image/inst.svg" alt="" /></a>-->
-           </li>
-           <li class="item">
-             <a href="" class="footer-link-n" aria-label="Твиттер">
-                 <svg class="footer-link-icon" width="20px" height="20px">
-                   <use href="./image/sprites_l.svg#icon-twit_l"></use>
-                 </svg>
-                  <!--<img src="image/twit.svg" alt="" />-->
-               </a>
-           </li>
-           <li class="item">
-             <a href="" class="footer-link-n" aria-label="Фейсбук">
-               <svg class="footer-link-icon" width="20px" height="20px">
-                 <use href="./image/sprites_l.svg#icon-face_l"></use>
-               </svg>
-               <!--<img src="image/face.svg" alt="" /></a>-->
-             </a>
-           </li>
-           <li class="item">
-             <a href="" class="footer-link-n" aria-label="Линкедин">
-               <svg class="footer-link-icon" width="20px" height="20px">
-                 <use href="./image/sprites_l.svg#icon-link_l"></use>
-               </svg>
-               <!--<img src="image/link.svg" alt="" /></a>-->
-             </a>
-           </li>
-         </ul> 
         </div>
-       <div>
-        <!--<span class="footer-title">Подпишитесь на рассылку</span>
-        <form action="/">-->
-          <div class="footer-form" >
-          <div class="footer-mailing">
-            <label for="mailing" class="footer-title">Подпишитесь на рассылку</label>
-            <input class="footer-input" type="text" name="mailing"  id="mailing" value="E-mail" />
-            <!--<label for="mailing" class="footer-label">E-mail</label>-->
-          </div>
+      </div>
+      <div>
+        <form class="footer-action" action="/">
+          <div class="footer-form">
+            <div class="footer-mailing">
+              <label for="mailing" class="footer-title"
+                >Подпишитесь на рассылку</label
+              >
+              <input
+                class="footer-input"
+                type="text"
+                name="mailing"
+                id="mailing"
+                value="E-mail"
+              />
+            </div>
             <button class="button-footer">
               Подписаться
               <svg class="button-footer-icon" width="24px" height="24px">
                 <use href="./image/sprites_l.svg#icon-telegram_l"></use>
               </svg>
-            <!--<img src="image/telegram.svg" alt="" />-->
             </button>
           </div>
-         </form>
-       </div>
+        </form>
       </div>
-   </footer>
+    </div>
+  </footer>
    <script src="./js/menu.js"></script>
   </body>
 </html>
